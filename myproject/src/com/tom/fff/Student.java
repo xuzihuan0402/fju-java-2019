@@ -1,4 +1,4 @@
-package fff;
+package com.tom.fff;
 
 import java.util.Scanner;
 
