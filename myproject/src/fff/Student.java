@@ -12,12 +12,12 @@ public class Student {
 		System.out.println("请输入数学成绩");
 		int math = Integer .parseInt(sc.nextLine());
 		if(math<=0||math>=100) {
-			throw new MyException("讯息成绩应0~100");
+			throw new MyException();
 		}
 		System.out.println("请输入英文成绩");
 		int english = Integer .parseInt(sc.nextLine());
 		if(english<=0||english>=100) {
-			throw new MyException("讯息成绩应0~100");
+			throw new MyException();
 		}
 		average = (math + english)/2;
 		System.out.println("平均为" + average);
