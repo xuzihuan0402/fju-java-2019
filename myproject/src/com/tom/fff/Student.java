@@ -18,12 +18,14 @@ public class Student {
 		Score e = new Score();
 		e.testException(english);
 		average = (math + english)/2;
-		System.out.println("平均为" + average);
 		}catch(NumberFormatException e) {
+			//e.printStackTrace();  //出错的地方、原因
 			System.out.println("讯息格式错误");
 		}catch(MyException e) {
 			System.out.println("讯息成绩应0~100");
 		}
+		
+		System.out.println("平均为" + average);
 
 	}
 
