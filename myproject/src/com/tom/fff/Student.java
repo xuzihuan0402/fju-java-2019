@@ -11,14 +11,12 @@ public class Student {
 		try {
 		System.out.println("请输入数学成绩");
 		int math = Integer .parseInt(sc.nextLine());
-		if(math<=0||math>=100) {
-			throw new MyException();
-		}
+		Score m = new Score();
+		m.testException(math);
 		System.out.println("请输入英文成绩");
 		int english = Integer .parseInt(sc.nextLine());
-		if(english<=0||english>=100) {
-			throw new MyException();
-		}
+		Score e = new Score();
+		e.testException(english);
 		average = (math + english)/2;
 		System.out.println("平均为" + average);
 		}catch(NumberFormatException e) {
