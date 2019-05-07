@@ -23,7 +23,6 @@ public class Tester {
 		
 		
 		
-		
 		/*
 		File dir = new File("C:\\xampp");
 		if(dir.exists()&&dir.isDirectory()) {
