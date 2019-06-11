@@ -13,14 +13,16 @@ public class Tester {
 		ArrayList<String> cities = new ArrayList<>();
 		ArrayList<String> areas = new ArrayList<>();
 		ArrayList<String> postCodes = new ArrayList<>();
+		String lastCity = "";
 		try {
 			BufferedReader in = new BufferedReader(new FileReader("data.txt"));
 			String line = in.readLine();
 			while (line != null) {
 				System.out.println(line);
 				String[] tokens = line.split("¡A");
-				if() {
-					cities.add(tokens[0]);
+				if(!tokens[0].equals(lastCity)) {
+					lastCity= tokens[0];
+					cities.add(lastCity);
 				}
 				areas.add(tokens[1]);
 				postCodes.add(tokens[2]);
